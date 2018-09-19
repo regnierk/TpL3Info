@@ -22,7 +22,7 @@ public class StudentTest {
 	/** 
 	 * Test de la méthode getName()
 	 */
-	void testGetName() {
+	public void testGetName() {
 		assertEquals(s.getName(),NAME);
 	}
 	
@@ -30,7 +30,7 @@ public class StudentTest {
 	/** 
 	 * Test de la méthode getNum()
 	 */
-	void testGetNum() {
+	public void testGetNum() {
 		assertEquals(s.getNumEtu(),NUM);
 	}
 	
@@ -38,7 +38,7 @@ public class StudentTest {
 	/**
 	 *  Test de la méthode setName()
 	 */
-	void testSetName() {
+	public void testSetName() {
 		s.setName("Luffy");
 		assertEquals(s.getName(),"Luffy");
 	}
@@ -47,7 +47,7 @@ public class StudentTest {
 	/**
 	 *  Test de la méthode setNum()
 	 */
-	void testSetNum() {
+	public void testSetNum() {
 		s.setNumEtu("001");
 		assertEquals(s.getNumEtu(),"001");
 	}
@@ -56,7 +56,7 @@ public class StudentTest {
 	/**
 	 *  Test de la méthode equals() rédéfinie
 	 */
-	void testEquals() {
+	public void testEquals() {
 		Student stu = new Student(NAME,NUM);
 		assertTrue(s.equals(stu));
 	}
